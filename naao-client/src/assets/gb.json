@@ -1,0 +1,689 @@
+[
+	{
+		"District": "Angul",
+		"Name": "Soumya Ranjan Sahoo",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Angul",
+		"Name": "Jayakrushna Nath",
+		"PassoutYear": 2004
+	},
+	{
+		"District": "Angul",
+		"Name": "Subham Dehury",
+		"PassoutYear": 2020
+	},
+	{
+		"District": "Angul",
+		"Name": "Bikash Chandra Sahu",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Angul",
+		"Name": "Bimal Kumar Samal",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Angul",
+		"Name": "Anusuya Nayak",
+		"PassoutYear": 2007
+	},
+	{
+		"District": "Balasore",
+		"Name": "Dr Arun Kumar Malik",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Balasore",
+		"Name": "Er Manas Ranjan Mandal",
+		"PassoutYear": 1997
+	},
+	{
+		"District": "Balasore",
+		"Name": "Tikayat Nayak",
+		"PassoutYear": 1994
+	},
+	{
+		"District": "Balasore",
+		"Name": "Tapan Jena",
+		"PassoutYear": 1997
+	},
+	{
+		"District": "Balasore",
+		"Name": "Krishnarani Sahoo",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Balasore",
+		"Name": "Amiya Ranjan Jena",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Manoranjan Bag",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Sujit Kumar Budkia",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Menaka Sirdar",
+		"PassoutYear": 2015
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Nutan Prabhash Taria",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Satyam Bania",
+		"PassoutYear": 2016
+	},
+	{
+		"District": "Bargarh",
+		"Name": "Swagatika Panda",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Umakanta Das",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Saumya subham Mohapatra",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Raj ratan jena",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Sai krishna mohanty",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Alisha mishra",
+		"PassoutYear": 2019
+	},
+	{
+		"District": "Bhadrak",
+		"Name": "Rajesh kumar Behera",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Kali Charan Patra",
+		"PassoutYear": 1995.0
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Swapneswar Sahu",
+		"PassoutYear": 1997.0
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Ms Nutan Seth",
+		"PassoutYear": 2006
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Manas Sahu",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Prashanta Kumar Nag",
+		"PassoutYear": 2007
+	},
+	{
+		"District": "Bolangir",
+		"Name": "Shantanu Sahu",
+		"PassoutYear": 2006
+	},
+	{
+		"District": "Boudh",
+		"Name": "Jyoti Ranjan Sahoo",
+		"PassoutYear": 2016
+	},
+	{
+		"District": "Boudh",
+		"Name": "Ghanashyam Behera",
+		"PassoutYear": 2011
+	},
+	{
+		"District": "Boudh",
+		"Name": "Pruthiraj Mahanandia",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Boudh",
+		"Name": "Ambika Prasad Agrawalla",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Boudh",
+		"Name": "Tanmaya Sahoo",
+		"PassoutYear": 2019
+	},
+	{
+		"District": "Boudh",
+		"Name": "Chandini Kanhar",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Cuttack",
+		"Name": "Trupti Ranjan Swain",
+		"PassoutYear": 1995
+	},
+	{
+		"District": "Cuttack",
+		"Name": "Sudhansu Satrujit",
+		"PassoutYear": 1994
+	},
+	{
+		"District": "Cuttack",
+		"Name": "laba Ojha",
+		"PassoutYear": 2003
+	},
+	{
+		"District": "Cuttack",
+		"Name": "Alok Ranjan Das",
+		"PassoutYear": 2007
+	},
+	{
+		"District": "Cuttack",
+		"Name": "Soumya Ranjan Mallick",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Cuttack",
+		"Name": "Arpita Nayak",
+		"PassoutYear": 2015
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Anshuman Sahoo",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Soumya Swastik Guru",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Yudhistir Nayak",
+		"PassoutYear": 2015
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Akash Kumar Sahu",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Rachana Behera",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Deogarh",
+		"Name": "Budhram Lakra",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Sarita Rath",
+		"PassoutYear": 1994
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Shiva Prasad Yadav",
+		"PassoutYear": 1996
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Dipti Ranjan Samant",
+		"PassoutYear": 2006
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Kartika Sahu",
+		"PassoutYear": 1996
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Sasmita Das",
+		"PassoutYear": 1996
+	},
+	{
+		"District": "Dhenkanal",
+		"Name": "Swetajit Sahoo",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Gajapati",
+		"Name": "SIBO PRASAD CHOUDHURY",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Gajapati",
+		"Name": "ABIRAMA MANDAL",
+		"PassoutYear": 2010
+	},
+	{
+		"District": "Gajapati",
+		"Name": "KARISHMA PANIGRAHI",
+		"PassoutYear": 2011
+	},
+	{
+		"District": "Gajapati",
+		"Name": "ANWESHA MAHANKUDO",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Gajapati",
+		"Name": "HEMANTA KUMAR NAYAK",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Gajapati",
+		"Name": "AKSHAYA KUMAR RATHA",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Subodha Patro",
+		"PassoutYear": 1994
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Fakir Mohan Adhikari",
+		"PassoutYear": 1996
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Tapan Pattnaik",
+		"PassoutYear": 1997
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Jyotsna Rani Bishoyi",
+		"PassoutYear": 1998
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Snigdha Sucharita",
+		"PassoutYear": 1999
+	},
+	{
+		"District": "Ganjam",
+		"Name": "Sisir Kumar Pradhan",
+		"PassoutYear": 2006
+	},
+
+	{
+		"District": "Jagatsingpur",
+		"Name": "Rashmita tudu",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Jagatsingpur",
+		"Name": "Bikash ranjan",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Jagatsingpur",
+		"Name": "Abhilash parija",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Jagatsingpur",
+		"Name": "Samir purty",
+		"PassoutYear": 2015
+	},
+	{
+		"District": "Jagatsingpur",
+		"Name": "Rahul behera",
+		"PassoutYear": 2019
+	},
+	{
+		"District": "Jagatsingpur",
+		"Name": "Satya sundar sharma",
+		"PassoutYear": 2019
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Santanu Kumar Jena",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Alok Kumar Jena",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Shibani Samarpita Ojha",
+		"PassoutYear": 2016
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Nityananda Mahalik",
+		"PassoutYear": 2016
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Biswa Barenya Mishra",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Jajpur",
+		"Name": "Jyoti Ranjan Dash",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Rimpal Patel",
+		"PassoutYear": 2010
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Debashish Pankaj Munda",
+		"PassoutYear": 2011
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Pankaj Sahu",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Haresh Sahu",
+		"PassoutYear": 2016
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Soumyashree Naik",
+		"PassoutYear": 2017
+	},
+	{
+		"District": "Jharsuguda",
+		"Name": "Sipramayee Sahu",
+		"PassoutYear": 2019
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Sibaranjan Satpathy",
+		"PassoutYear": 1994
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Siddhant Naik",
+		"PassoutYear": 2001
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Ajit Pradhan",
+		"PassoutYear": 1998
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Gyana Mallick",
+		"PassoutYear": 2008
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Chaitanya Meher",
+		"PassoutYear": 2010
+	},
+	{
+		"District": "Kalahandi",
+		"Name": "Swayang Prabha Mund",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Bidyaraj Mishra",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Rakesh Das",
+		"PassoutYear": 2005
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Sekh Liaquat Ali",
+		"PassoutYear": 2014
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Ahemad Raja Khan",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Smruti Swati Pragyan",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Kendrapara",
+		"Name": "Rahul Biswal",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Madan Dass",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Yashobant Mahanta",
+		"PassoutYear": 2003
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Kirtibala Pradhan",
+		"PassoutYear": 2008
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Om prakash Jena",
+		"PassoutYear": 2009
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Sankarananda Rana",
+		"PassoutYear": 2013
+	},
+	{
+		"District": "Keonjhar",
+		"Name": "Rabindra Sahoo",
+		"PassoutYear": "NA"
+	},
+
+	{
+		"District": "Khurdha",
+		"Name": "Pratyusha Ranjan Sahoo",
+		"PassoutYear": 2010
+	},
+	{ "District": "Khurdha", "Name": "S SUBHASMITA SAHOO", "PassoutYear": 2013 },
+	{ "District": "Khurdha", "Name": "Gyana Ranjan Behera", "PassoutYear": 2015 },
+	{
+		"District": "Khurdha",
+		"Name": "Prasanta kumar sahoo",
+		"PassoutYear": 2015
+	},
+	{
+		"District": "Khurdha",
+		"Name": "Pragnaya Priyadarshini",
+		"PassoutYear": 2014
+	},
+	{ "District": "Khurdha", "Name": "Sampad Sahoo", "PassoutYear": 2013 },
+	{ "District": "Koraput", "Name": "ASWINI PATRA", "PassoutYear": 2005 },
+	{ "District": "Koraput", "Name": "RABI NARAYAN SAHU", "PassoutYear": 1994 },
+	{ "District": "Koraput", "Name": "TARUN KUMAR ROY", "PassoutYear": 2000 },
+	{ "District": "Koraput", "Name": "NIHARIKA BIDIKA", "PassoutYear": 1998 },
+	{ "District": "Koraput", "Name": "JATINDRA SINGH", "PassoutYear": 2008 },
+	{ "District": "Koraput", "Name": "OM PRAKASH SUBUDHI", "PassoutYear": 2015 },
+	{ "District": "Malkangiri-1", "Name": "Suraj Ray", "PassoutYear": 2014 },
+	{ "District": "Malkangiri-1", "Name": "Suchitra Sahoo", "PassoutYear": 2011 },
+	{ "District": "Malkangiri-1", "Name": "Abhijit Mandal", "PassoutYear": 2011 },
+	{
+		"District": "Malkangiri-1",
+		"Name": "Smruti Rekha Ojha",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Malkangiri-1",
+		"Name": "Soniya Majumdar",
+		"PassoutYear": 2011
+	},
+	{
+		"District": "Malkangiri-1",
+		"Name": "Sagar Kumar Bala",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Malkangiri-2",
+		"Name": "Mrutyunjay Hantal",
+		"PassoutYear": 2018
+	},
+	{ "District": "Malkangiri-2", "Name": "Sasikant Gond", "PassoutYear": 2018 },
+	{
+		"District": "Malkangiri-2",
+		"Name": "Bholanath Pujari",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Malkangiri-2",
+		"Name": "Sukanya Pattnaik",
+		"PassoutYear": 2018
+	},
+	{ "District": "Malkangiri-2", "Name": "Arpita Muduli", "PassoutYear": 2018 },
+	{
+		"District": "Malkangiri-2",
+		"Name": "Sanat Sumanjit Murmu",
+		"PassoutYear": 2018
+	},
+	{
+		"District": "Mayurbhanj",
+		"Name": "Suryanarayana Dev Patra",
+		"PassoutYear": "NA"
+	},
+	{ "District": "Mayurbhanj", "Name": "Bhabani Murmu", "PassoutYear": 2019 },
+	{
+		"District": "Mayurbhanj",
+		"Name": "Satyaprakash Thayal",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Mayurbhanj",
+		"Name": "Malay Kumar Patra",
+		"PassoutYear": 2012
+	},
+	{
+		"District": "Mayurbhanj",
+		"Name": "Baidyanath Marandi",
+		"PassoutYear": 2001
+	},
+	{ "District": "Mayurbhanj", "Name": "Haraprava Patra", "PassoutYear": 2009 },
+	{
+		"District": "Nabarangpur",
+		"Name": "RAHUL KUMAR NAYAK",
+		"PassoutYear": 2010
+	},
+	{
+		"District": "Nabarangpur",
+		"Name": "KSHITIRANJAN SWAIN",
+		"PassoutYear": 2015
+	},
+	{ "District": "Nabarangpur", "Name": "RUPALI BISHOYEE", "PassoutYear": 2016 },
+	{
+		"District": "Nabarangpur",
+		"Name": "JYOTISHREE MAJHI",
+		"PassoutYear": 2021
+	},
+	{ "District": "Nabarangpur", "Name": "SOUVIK MANDAL", "PassoutYear": 2008 },
+	{ "District": "Nabarangpur", "Name": "BHISMA SOURA", "PassoutYear": 2017 },
+	{
+		"District": "Nayagarh",
+		"Name": "Soumya Ranjan Behera",
+		"PassoutYear": 2015
+	},
+	{ "District": "Nayagarh", "Name": "Ajay Kumar Naik", "PassoutYear": 2014 },
+	{ "District": "Nayagarh", "Name": "Siba Sundar Nayak", "PassoutYear": 2018 },
+	{ "District": "Nayagarh", "Name": "Amit Kumar Panda", "PassoutYear": "NA" },
+	{ "District": "Nayagarh", "Name": "Chandini Dash", "PassoutYear": "NA" },
+	{ "District": "Nayagarh", "Name": "Prabhupada Mishra", "PassoutYear": 2018 },
+	{ "District": "Nuapada", "Name": "Pankaj Singh", "PassoutYear": 2003 },
+	{ "District": "Nuapada", "Name": "Himachal Majhi", "PassoutYear": 2003 },
+	{ "District": "Nuapada", "Name": "Lalbahadur Das", "PassoutYear": 2004 },
+	{ "District": "Nuapada", "Name": "Gobinda Thakur", "PassoutYear": 2006 },
+	{ "District": "Nuapada", "Name": "Yashraj Jain", "PassoutYear": 2017 },
+	{ "District": "Nuapada", "Name": "Surabhi Jagadamba", "PassoutYear": 2013 },
+	{ "District": "Phulbani", "Name": "Ramakanta Digal", "PassoutYear": "NA" },
+	{
+		"District": "Phulbani",
+		"Name": "Bhabani Shankar Nayak",
+		"PassoutYear": 2000
+	},
+	{ "District": "Phulbani", "Name": "Subrajit Pradhan", "PassoutYear": "NA" },
+	{ "District": "Phulbani", "Name": "Bidyadhar Meher", "PassoutYear": "NA" },
+	{ "District": "Phulbani", "Name": "Ms Archana Dash", "PassoutYear": 2007 },
+	{ "District": "Phulbani", "Name": "S. Pranaya", "PassoutYear": 2017 },
+	{ "District": "Puri", "Name": "Aditya Narayan Panda", "PassoutYear": 2015 },
+	{ "District": "Puri", "Name": "Sovan Supriya Jena", "PassoutYear": 2017 },
+	{ "District": "Puri", "Name": "Siddharth Sahoo", "PassoutYear": 2019 },
+	{ "District": "Puri", "Name": "Hitesh Behera", "PassoutYear": 2016 },
+	{ "District": "Puri", "Name": "Priyanka Priyambada", "PassoutYear": 2014 },
+	{
+		"District": "Rayagada",
+		"Name": "Chandrasekhar Palaka",
+		"PassoutYear": 2009
+	},
+	{ "District": "Rayagada", "Name": "E Snigdharani", "PassoutYear": 2012 },
+	{ "District": "Rayagada", "Name": "Rabindra Nimal", "PassoutYear": "NA" },
+	{ "District": "Rayagada", "Name": "Abinash Paikaray", "PassoutYear": 2014 },
+	{ "District": "Rayagada", "Name": "Suraj Pratap Padhi", "PassoutYear": 2017 },
+	{
+		"District": "Rayagada",
+		"Name": "Biswanath Pattanayak",
+		"PassoutYear": "NA"
+	},
+	{
+		"District": "Sambalpur",
+		"Name": "Dr. RamNaresh Mahaling",
+		"PassoutYear": 1995
+	},
+	{ "District": "Sambalpur", "Name": "Nivedita Devta", "PassoutYear": 2002 },
+	{ "District": "Sambalpur", "Name": "Dr Jagadish Hansa", "PassoutYear": 2003 },
+	{ "District": "Sambalpur", "Name": "Bindia Seth", "PassoutYear": 2003 },
+	{ "District": "Sambalpur", "Name": "Makardhwaj Bhoi", "PassoutYear": 1999 },
+	{ "District": "Sambalpur", "Name": "Abhaya Saraf", "PassoutYear": 1996 },
+	{ "District": "Sonepur", "Name": "Prakash Dang", "PassoutYear": 2008 },
+	{ "District": "Sonepur", "Name": "Bhenkateswar Bhoi", "PassoutYear": 2008 },
+	{ "District": "Sonepur", "Name": "Nirupama Putel", "PassoutYear": 2008 },
+	{ "District": "Sonepur", "Name": "Sanjaya Deep", "PassoutYear": 2009 },
+	{ "District": "Sonepur", "Name": "Ashish Chouhan", "PassoutYear": 2009 },
+	{ "District": "Sonepur", "Name": "Ram Chandra Murmu", "PassoutYear": 2017 },
+	{
+		"District": "Sundargadh",
+		"Name": "Divya Sagarika Majhi",
+		"PassoutYear": 2006
+	},
+	{ "District": "Sundargadh", "Name": "Amit Shukla", "PassoutYear": 2009 },
+	{ "District": "Sundargadh", "Name": "Preety Tirkey", "PassoutYear": 2009 },
+	{ "District": "Sundargadh", "Name": "Manas Ku Kamila", "PassoutYear": 2010 },
+	{ "District": "Sundargadh", "Name": "APINDRA ROHIDAS", "PassoutYear": 2012 },
+	{ "District": "Sundargadh", "Name": "MOHANLAL PATRA", "PassoutYear": "NA" }
+]
