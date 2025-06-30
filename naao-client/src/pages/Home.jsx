@@ -10,7 +10,7 @@ import {
 import HeroSection from "../components/HeroSection";
 import MessageCard from "../components/MessageCard";
 import EventCard from "../components/EventCard";
-import SouvenirPdf from "../assets/Souvenir_2024.pdf";
+import SouvenirPdf from "../assets/Souvenir_2024_compressed.pdf";
 import NaaoActivityReport from "../assets/naao-activity-report.pdf";
 import PdfComp from "../components/PdfComp";
 
