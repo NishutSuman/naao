@@ -1,4 +1,5 @@
 import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 import {
 	FaCalendarAlt,
 	FaMapMarkerAlt,
@@ -7,6 +8,7 @@ import {
 	FaChevronLeft,
 	FaChevronRight,
 	FaStar,
+	FaInfoCircle,
 } from "react-icons/fa";
 
 const Events = () => {
@@ -75,7 +77,7 @@ const Events = () => {
 											className="w-full h-64 md:h-full object-cover"
 										/>
 									</div>
-									<div className="p-6 md:w-3/5 flex flex-col ">
+									<div className="p-6 md:w-3/5 flex flex-col">
 										<div className="mb-2">
 											<span
 												className={`px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(
@@ -102,10 +104,31 @@ const Events = () => {
 												<span>{event.location}</span>
 											</div>
 										</div>
-										<div className="mt-auto">
-											<button className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 font-medium" onClick={() => window.open(event.registrationLink, "_blank")}>
-												Register Now
-											</button>
+										<div className="mt-auto flex flex-col space-y-3">
+											<Link
+												to={`/events/${event.id}`}
+												className="w-full py-2 bg-blue-100 text-blue-800 rounded-md hover:bg-blue-200 transition duration-300 font-medium text-center flex items-center justify-center"
+											>
+												<FaInfoCircle className="mr-2" /> View Details
+											</Link>
+											{/* Dynamic registration button based on registration type */}
+											{event.registrationType === "form" ? (
+												<Link
+													to={`/events/${event.id}`}
+													className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 font-medium text-center"
+												>
+													Register Now
+												</Link>
+											) : (
+												<button
+													className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 font-medium"
+													onClick={() =>
+														window.open(event.registrationLink, "_blank")
+													}
+												>
+													Register Now
+												</button>
+											)}
 										</div>
 									</div>
 								</div>
@@ -250,9 +273,16 @@ const Events = () => {
 					</div>
 
 					<div className="text-center mt-10">
-						<button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
+						{/* <button className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300">
 							View Event Gallery
-						</button>
+						</button> */}
+
+						<Link
+							to="/gallery"
+							className=" px-6 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+						>
+							View Event Gallery
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -499,9 +529,10 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Sample data
+// Updated events data with registration types
 const events = [
 	{
+		id: "ram-naao-2025",
 		title: "NVS Regional Alumni Meet & NAAO Annual Meet",
 		date: "August 3, 2025",
 		time: "08:00 AM - 10:00 PM",
@@ -509,15 +540,78 @@ const events = [
 		image: "https://i.postimg.cc/q7CdZMSx/nvs-meet-banner-final.jpg",
 		category: "annual-meet",
 		status: "upcoming",
-		registrationLink: "https://digikite.net/naao-meet/"
+		registrationLink: "https://digikite.net/naao-meet/",
+		registrationType: "external", // Uses external registration link
+		description:
+			"Join us for the biggest alumni gathering of the year, combining the NVS Bhopal Region Alumni Meet with our annual NAAO meetup. Connect with former classmates, network with professionals across various fields, and celebrate our shared Navodayan heritage.",
+		agenda: [
+			// "08:00 AM - Registration & Welcome Kit Distribution",
+			// "09:30 AM - Inaugural Ceremony",
+			// "11:00 AM - Alumni Achievement Recognition",
+			// "12:30 PM - Lunch & Networking",
+			// "02:00 PM - Panel Discussion: 'Navodayans in Nation Building'",
+			// "04:00 PM - Cultural Performances",
+			"Details will be updated soon...",
+		],
+		organizers: [
+			"Mr. Gyana Mallick - Venue Coordinator",
+			"Mr. Anshuman Dehuri - Venue Coordinator",
+			"Mr. Sitaram Beria - Food Management",
+			"Mr. Tapan Jena - Food Management",
+			"Miss Shobharani Bhanja - Guest Management",
+			"Mr Sanjay Nayak - Guest Management",
+			"Mrs. Pravasini Mohanty - Felicitation & Facilities",
+			"Miss Rimpal Patel - Felicitation & Facilities",
+			"Mr. Rabi Narayan Sahoo - Registration",
+			"Mr. Ananta Das - Registration",
+			"Mr. Sitaram Beria - Fund Management",
+			"Mr. Rudra Narayan Satapathy - Fund Management",
+			"Mr. Manoj Patnayak - Cultural Management",
+			"Mrs. Sarita Rath - Cultural Management",
+			"Mrs. Lipika Das - Cultural Management",
+		],
+		contactInfo: "+91 93812 97056 (For queries)",
+	},
+	{
+		id: "naao-quiz-2025",
+		title: "NAAO Super Quiz",
+		date: "TBD",
+		time: "TBD",
+		location: "Hybrid Mode (Online & Offline)",
+		image: "https://i.postimg.cc/76dFJTTR/NAAO-SUPER-QUIZ.png",
+		category: "workshop",
+		status: "upcoming",
+		registrationType: "form", // Uses internal registration form
+		registrationLink: "", // Not used with form registration
+		description:
+			"Test your knowledge and compete with fellow Navodayans in our 4th annual quiz competition covering various subjects from general knowledge to specialized technical fields. Open to all alumni and current JNV students.",
+		agenda: [
+			// "10:00 AM - Registration & Team Formation",
+			// "10:30 AM - Preliminary Round",
+			// "11:30 AM - Break & Refreshments",
+			// "12:00 PM - Semi-Finals",
+			// "01:00 PM - Finals",
+			"Details will be updated soon...",
+		],
+		organizers: [
+			"Miss Shobharani Bhanja - In Charge OB",
+			"Dr. Rushikant Mohanta - Event Coordinator",
+			"Mr. Byomakesh Meher - Event Coordinator",
+			"Mr. Hemanta Kumar- Event Coordinator",
+			"Mr. Sampad Sahoo - Event Coordinator",
+			"Mr. Soubhagya Nayak - Event Coordinator",
+			"Mrs. Madhusmit Bisi - Host",
+			"Mr. Nishut Suman - Technical Support",
+		],
+		contactInfo: "+91 93812 97056 (For queries)",
+		prizes: "TBD (Will be announced soon)",
 	},
 	{
 		title: "7th NAAO Annual Meet",
 		date: "February 3, 2024",
 		time: "08:00 AM - 10:00 PM",
 		location: "Rail Auditorium, Bhubaneswar",
-		image:
-			"https://i.postimg.cc/NjHb2Xhc/IMG-0877.jpg",
+		image: "https://i.postimg.cc/NjHb2Xhc/IMG-0877.jpg",
 		category: "annual-meet",
 		status: "past",
 	},
@@ -526,8 +620,7 @@ const events = [
 		date: "June 29, 2025",
 		time: "8:00 PM - 10:00 PM",
 		location: "Virtual (Zoom)",
-		image:
-			"https://i.postimg.cc/6pfchXQj/IMG-20240106-WA0027.jpg",
+		image: "https://i.postimg.cc/6pfchXQj/IMG-20240106-WA0027.jpg",
 		category: "meeting",
 		status: "past",
 	},
@@ -628,4 +721,5 @@ const pastEventImages = [
 	},
 ];
 
+export { events };
 export default Events;

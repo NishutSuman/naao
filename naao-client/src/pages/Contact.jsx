@@ -320,17 +320,21 @@ const Contact = () => {
 								<FaCalendarAlt className="mr-2" /> About Events & Registration
 							</h3>
 							<div className="space-y-4">
+							<FaqItem
+									question="Is it a NAAO event or NVS event?"
+									answer="The BHOPAL REGION ALUMNI MEET & NAAO ANNUAL MEET 2025 is organized by Navodaya Vidyalaya Samiti (NVS) in collaboration with the Navodaya Alumni Association of Odisha (NAAO). It is also supported by Chhatishgarh Alumni Association of Navodaya (CAAN) and Madhya Pradesh Alumni Association of Navodaya (MAAN)."
+								/>
 								<FaqItem
 									question="How do I register for the upcoming Annual Meet?"
-									answer="Registration for the Annual Meet can be done through our website's Events section. Click on the 'Register Now' button for the event, fill in your details, and complete the payment process. Early bird registrations typically get a discounted rate, so we recommend registering early."
+									answer="Registration for the Annual Meet can be done through our website's Events section. Click on the 'Register Now' button for the event, you will be redirected to the registration portal, fill in your details, and complete the payment process. Early bird registrations typically get a discounted rate, so we recommend registering early."
 								/>
 								<FaqItem
 									question="What does the event registration fee include?"
-									answer="The registration fee typically includes access to all event sessions, meals during the event, event kit with merchandise, and participation certificates. Accommodation is usually separate unless specifically mentioned as included in the registration package."
+									answer="The registration fee typically includes access to all event sessions and meals during the event."
 								/>
 								<FaqItem
 									question="Can I bring family members to NAAO events?"
-									answer="Yes, most NAAO events welcome family members. There are usually separate registration categories for alumni, spouse, and children with different fee structures. Please check the specific event details for family registration options."
+									answer="Yes, NAAO events welcome family members and friends. While filling the registration form, you can indicate the number of additional guests accompanying you. Accordingly pre guest a registration fee of Rs 500 will be charged."
 								/>
 							</div>
 						</div>
@@ -341,13 +345,14 @@ const Contact = () => {
 								<FaBed className="mr-2" /> Travel & Accommodation
 							</h3>
 							<div className="space-y-4">
+								
 								<FaqItem
 									question="How can I find accommodation for NAAO events in Bhubaneswar?"
-									answer="For major events, NAAO arranges special rates at partner hotels near the venue. These options are shared with registered participants via email. Alternatively, we maintain a list of recommended hotels across different budget ranges on our website's Events page. For assistance with bookings, please contact our event coordinator at events@naao.org."
+									answer="As Bhubaneswar is a capital city, there are many hotels and guesthouses available near to the venue. Stays can be booked through popular travel websites or directly with the hotels. NAAO volunteers can also assist with recommendations based on your budget and preferences."
 								/>
 								<FaqItem
 									question="What's the best way to reach the event venue?"
-									answer="Our main events are typically held at venues with good connectivity. From Bhubaneswar airport, taxis are readily available (30-45 minute journey). From railway station, auto-rickshaws and taxis can reach most venues within 20 minutes. For major events, we also arrange shuttle services from key locations. Detailed directions are sent to all registered participants."
+									answer="Our main events are typically held at venues with good connectivity. From Bhubaneswar airport, taxis are readily available (20-25 minute journey). From railway station, auto-rickshaws and taxis can reach most venues within 20 minutes. NAAO volunteers might also arrange shuttle services from key locations."
 								/>
 								<FaqItem
 									question="Is there any travel assistance provided by NAAO?"

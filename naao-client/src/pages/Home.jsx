@@ -145,48 +145,60 @@ const Home = () => {
 			</section>
 
 			{/* PDF Section */}
-			<section className="bg-blue-50 py-16 md:flex justify-between gap-0">
-				<div className="container mx-auto px-4 my-5">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold text-gray-800">NAAO Souvenir</h2>
-						<div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6"></div>
-						<p className="text-gray-600 max-w-3xl mx-auto mb-8">
-							The NAAO Souvenir is a commemorative publication that highlights the
-							achievements and contributions of our alumni. It serves as a
-							platform to showcase success stories, memorable moments, and the
-							impact of our community.
-						</p>
-					</div>
+			<section className="bg-blue-50 py-16">
+				<div className="container mx-auto px-4">
+					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+						{/* First PDF - Souvenir */}
+						<div>
+							<div className="text-center mb-8">
+								<h2 className="text-3xl font-bold text-gray-800">
+									NAAO Souvenir
+								</h2>
+								<div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6"></div>
+								<p className="text-gray-600 max-w-2xl mx-auto">
+									The NAAO Souvenir is a commemorative publication that
+									highlights the achievements and contributions of our alumni.
+									It serves as a platform to showcase success stories, memorable
+									moments, and the impact of our community.
+								</p>
+							</div>
 
-					{/* PDF Viewer */}
-					<div className="max-w-3xl mx-auto">
-						<PdfComp
-							pdfFile={SouvenirPdf}
-							title="NAAO Souvenir 2023-24"
-							downloadFileName="NAAO_Bylaw.pdf"
-							maxHeight="700px"
-						/>
-					</div>
-				</div>
-				<div className="container mx-auto px-4 my-8">
-					<div className="text-center mb-12">
-						<h2 className="text-3xl font-bold text-gray-800">NAAO Activity Report</h2>
-						<div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6"></div>
-						<p className="text-gray-600 max-w-3xl mx-auto mb-8">
-							The NAAO Activity Report provides an overview of our initiatives,
-							events, and community engagement over the past years. It highlights
-							the impact we have made together for society and how we got strengthened as a community.
-						</p>
-					</div>
+							{/* PDF Viewer */}
+							<div className="max-w-2xl mx-auto">
+								<PdfComp
+									pdfFile={SouvenirPdf}
+									title="NAAO Souvenir 2023-24"
+									downloadFileName="NAAO_Souvenir_2023-24.pdf"
+									maxHeight="600px"
+								/>
+							</div>
+						</div>
 
-					{/* PDF Viewer */}
-					<div className="max-w-3xl mx-auto">
-						<PdfComp
-							pdfFile={NaaoActivityReport}
-							title="NAAO Activity Report"
-							downloadFileName="NAAO_Bylaw.pdf"
-							maxHeight="700px"
-						/>
+						{/* Second PDF - Activity Report */}
+						<div>
+							<div className="text-center mb-8">
+								<h2 className="text-3xl font-bold text-gray-800">
+									NAAO Activity Report
+								</h2>
+								<div className="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6"></div>
+								<p className="text-gray-600 max-w-2xl mx-auto">
+									The NAAO Activity Report provides an overview of our
+									initiatives, events, and community engagement over the past
+									years. It highlights the impact we have made together for
+									society and how we got strengthened as a community.
+								</p>
+							</div>
+
+							{/* PDF Viewer */}
+							<div className="max-w-2xl mx-auto">
+								<PdfComp
+									pdfFile={NaaoActivityReport}
+									title="NAAO Activity Report"
+									downloadFileName="NAAO_Activity_Report.pdf"
+									maxHeight="600px"
+								/>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -291,7 +303,7 @@ const EventPopup = ({ onClose }) => {
 				<div className="pt-20 px-6 pb-6">
 					<div className="text-center">
 						<h3 className="text-xl font-bold text-gray-800 mb-2">
-							NVS Bhopal Region Alumni Meet <br/> & <br/> NAAO Annual Meet
+							NVS Bhopal Region Alumni Meet <br /> & <br /> NAAO Annual Meet
 						</h3>
 						<p className="text-gray-600 mb-6">
 							Don't miss our biggest event of the year! Register now to secure
@@ -317,14 +329,22 @@ const EventPopup = ({ onClose }) => {
 							</div>
 						</div>
 
-						<form className="space-y-4 mb-4" onSubmit={() => window.open("https://digikite.net/naao-meet/", "_blank")}>
+						{/* <form
+							className="space-y-4 mb-4"
+							// onSubmit={() =>
+							// 	window.open("https://digikite.net/naao-meet/", "_blank")
+							// }
+						>
 							<button
 								type="submit"
 								className="w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
 							>
 								Register Now
 							</button>
-						</form>
+						</form> */}
+						<div className=" mb-4 w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+							<Link to="/events">Register Now</Link>
+						</div>
 
 						<div className="text-xs text-gray-500">
 							Limited seats available. Registration closes on August 1st, 2025.
