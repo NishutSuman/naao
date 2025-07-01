@@ -5,16 +5,19 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Events from "./pages/Events";
-import EventDetail from "./pages/EventDetail"; // Import the new component
+import EventDetail from "./pages/EventDetail";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import OfficeBearers from "./pages/OfficeBearers";
 import Members from "./pages/Members";
-import FloatingButtons from "./components/FloatingButtons"; // Import the new component
+import FloatingButtons from "./components/FloatingButtons";
+import ScrollToTop from "./components/ScrollToTop"; // Import the new ScrollToTop component
 
 function App() {
 	return (
 		<Router>
+			<ScrollToTop />{" "}
+			{/* Add ScrollToTop component inside Router but outside of div */}
 			<div className="flex flex-col min-h-screen">
 				<Navbar />
 				<main className="flex-grow">
@@ -22,8 +25,7 @@ function App() {
 						<Route path="/" element={<Home />} />
 						<Route path="/about" element={<About />} />
 						<Route path="/events" element={<Events />} />
-						<Route path="/events/:eventId" element={<EventDetail />} />{" "}
-						{/* New route for event details */}
+						<Route path="/events/:eventId" element={<EventDetail />} />
 						<Route path="/gallery" element={<Gallery />} />
 						<Route path="/office-bearers" element={<OfficeBearers />} />
 						<Route path="/members" element={<Members />} />
@@ -31,7 +33,7 @@ function App() {
 					</Routes>
 				</main>
 				<Footer />
-				<FloatingButtons /> {/* Add FloatingButtons component here */}
+				<FloatingButtons />
 			</div>
 		</Router>
 	);
