@@ -11,6 +11,7 @@ import {
 	FaTrophy,
 	FaExternalLinkAlt,
 	FaCheck,
+	FaWhatsapp,
 } from "react-icons/fa";
 
 // Import events data
@@ -157,7 +158,7 @@ const EventDetail = () => {
 						submitted: true,
 						error: false,
 						message:
-							"Registration successful! Your details have been recorded.",
+							`Thank you for your registration! Your details have been recorded for ${event.title}.`,
 					});
 
 					// Reset form
@@ -290,14 +291,14 @@ const EventDetail = () => {
 						<p className="text-gray-700 leading-relaxed">{event.description}</p>
 					</div>
 
-					{/* Agenda */}
-					{event.agenda && (
+					{/* Schedule */}
+					{event.schedule && (
 						<div className="mb-10">
 							<h2 className="text-2xl font-bold mb-4 flex items-center">
-								<FaListUl className="mr-2 text-blue-600" /> Agenda
+								<FaListUl className="mr-2 text-blue-600" /> Schedule
 							</h2>
 							<ul className="space-y-2 text-gray-700">
-								{event.agenda.map((item, index) => (
+								{event.schedule.map((item, index) => (
 									<li
 										key={index}
 										className="border-l-4 border-blue-600 pl-4 py-2"
@@ -363,6 +364,26 @@ const EventDetail = () => {
 											Registration Complete!
 										</h3>
 										<p className="text-gray-600 mb-6">{formStatus.message}</p>
+
+										{/* WhatsApp Join Button */}
+										{event.whatsappGroup && (
+											<div className="mb-6">
+												<p className="text-gray-700 mb-3">
+													Join our WhatsApp group for event updates and
+													discussions:
+												</p>
+												<a
+													href={event.whatsappGroup}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="inline-flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300"
+												>
+													<FaWhatsapp className="mr-2 text-xl" /> Join WhatsApp
+													Group
+												</a>
+											</div>
+										)}
+
 										<button
 											onClick={() =>
 												setFormStatus({
@@ -413,7 +434,7 @@ const EventDetail = () => {
 													onChange={handleInputChange}
 													required
 													className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-													placeholder="Enter your state"
+													placeholder="E.g. Odisha"
 												/>
 											</div>
 
@@ -432,7 +453,7 @@ const EventDetail = () => {
 													onChange={handleInputChange}
 													required
 													className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-													placeholder="Enter your JNV district"
+													placeholder="E.g. Puri"
 												/>
 											</div>
 
@@ -567,7 +588,9 @@ const EventDetail = () => {
 								<p className="text-gray-900 mb-6">
 									To register for this event, please click the button below
 									which will take you to our registration portal.
-                                    <br/> Our registration portal is managed by <span style={{ fontWeight: "bold" }}>DIGIKITE</span>, a trusted venture by an alumni of JNV Puri, Odisha. 
+									<br /> Our registration portal is managed by{" "}
+									<span style={{ fontWeight: "bold" }}>DIGIKITE</span>, a
+									trusted venture by an alumni of JNV Puri, Odisha.
 								</p>
 								<a
 									href={event.registrationLink}

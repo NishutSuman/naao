@@ -306,7 +306,8 @@ const EventPopup = ({ onClose }) => {
 							NVS Bhopal Region Alumni Meet <br /> & <br /> NAAO Annual Meet
 						</h3>
 						<p className="text-gray-600 mb-6">
-							Don't miss our biggest event of the year! Register now to secure
+							Don't miss our biggest event of the year! <br/>
+							Register now to secure
 							your spot.
 						</p>
 
@@ -343,7 +344,7 @@ const EventPopup = ({ onClose }) => {
 							</button>
 						</form> */}
 						<div className=" mb-4 w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
-							<Link to="/events">Register Now</Link>
+							<Link to="/events/bram-naao-2025">Register Now</Link>
 						</div>
 
 						<div className="text-xs text-gray-500">

@@ -98,16 +98,16 @@ const Contact = () => {
 										content={
 											<>
 												<a
-													href="tel:+919876543210"
-													className="hover:text-blue-600 block"
-												>
-													+91 98765 43210
-												</a>
-												<a
 													href="tel:+918095112234"
 													className="hover:text-blue-600 block"
 												>
 													+91 80951 12234
+												</a>
+												<a
+													href="tel:+919381297056"
+													className="hover:text-blue-600 block"
+												>
+													+91 93812 97056
 												</a>
 											</>
 										}
@@ -354,10 +354,10 @@ const Contact = () => {
 									question="What's the best way to reach the event venue?"
 									answer="Our main events are typically held at venues with good connectivity. From Bhubaneswar airport, taxis are readily available (20-25 minute journey). From railway station, auto-rickshaws and taxis can reach most venues within 20 minutes. NAAO volunteers might also arrange shuttle services from key locations."
 								/>
-								<FaqItem
+								{/* <FaqItem
 									question="Is there any travel assistance provided by NAAO?"
 									answer="For special circumstances like student members or senior alumni requiring assistance, NAAO tries to arrange travel support or carpooling options. Please contact our support team at least two weeks before the event to request any travel assistance."
-								/>
+								/> */}
 							</div>
 						</div>
 

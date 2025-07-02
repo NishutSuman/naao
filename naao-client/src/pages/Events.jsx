@@ -532,7 +532,7 @@ document.head.appendChild(style);
 // Updated events data with registration types
 const events = [
 	{
-		id: "ram-naao-2025",
+		id: "bram-naao-2025",
 		title: "NVS Regional Alumni Meet & NAAO Annual Meet",
 		date: "August 3, 2025",
 		time: "08:00 AM - 10:00 PM",
@@ -542,9 +542,10 @@ const events = [
 		status: "upcoming",
 		registrationLink: "https://digikite.net/naao-meet/",
 		registrationType: "external", // Uses external registration link
+		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link
 		description:
 			"Join us for the biggest alumni gathering of the year, combining the NVS Bhopal Region Alumni Meet with our annual NAAO meetup. Connect with former classmates, network with professionals across various fields, and celebrate our shared Navodayan heritage.",
-		agenda: [
+		schedule: [
 			// "08:00 AM - Registration & Welcome Kit Distribution",
 			// "09:30 AM - Inaugural Ceremony",
 			// "11:00 AM - Alumni Achievement Recognition",
@@ -573,37 +574,39 @@ const events = [
 		contactInfo: "+91 93812 97056 (For queries)",
 	},
 	{
-		id: "naao-quiz-2025",
+		id: "naao-super-quiz-2025",
 		title: "NAAO Super Quiz",
-		date: "TBD",
-		time: "TBD",
-		location: "Hybrid Mode (Online & Offline)",
+		date: "13th July 2025 (Preliminary Round)",
+		time: "08:00 PM IST",
+		location: "Online Mode (Preliminary Round)",
 		image: "https://i.postimg.cc/76dFJTTR/NAAO-SUPER-QUIZ.png",
 		category: "workshop",
 		status: "upcoming",
 		registrationType: "form", // Uses internal registration form
 		registrationLink: "", // Not used with form registration
+		whatsappGroup: "https://chat.whatsapp.com/BY2PlzYTbbEHGUWVsYKd3J?mode=r_c", // Add WhatsApp group link
 		description:
-			"Test your knowledge and compete with fellow Navodayans in our 4th annual quiz competition covering various subjects from general knowledge to specialized technical fields. Open to all alumni and current JNV students.",
-		agenda: [
-			// "10:00 AM - Registration & Team Formation",
-			// "10:30 AM - Preliminary Round",
-			// "11:30 AM - Break & Refreshments",
-			// "12:00 PM - Semi-Finals",
-			// "01:00 PM - Finals",
-			"Details will be updated soon...",
+			"NAAO Super Quiz brought to you by HEARTMATE INSTITUTE. Test your knowledge and compete with fellow Navodayans in our 4th annual quiz competition covering various subjects. Open to all alumni of JNV.",
+		schedule: [
+			"Preliminary Round: Online Quiz - 13th July 2025",
+			"Main Round: Online Quiz - 20th July 2025",
+			"Final Round: Offline Quiz - NVS Regional Alumni Meet - 3rd August 2025",
+			"Final Round Venue: Rail Auditorium, Bhubaneswar",
+			"Final Round Time: 08:00 AM - 09:30 AM",
+			"Final Round Reporting Time: 07:00 AM, 3rd August 2025",
+			"NOTE: The final round will be conducted in person (physical mode) at the NVS Regional Alumni Meet. All finalist need to report at the venue on reporting time positivley.",
 		],
 		organizers: [
 			"Miss Shobharani Bhanja - In Charge OB",
-			"Dr. Rushikant Mohanta - Event Coordinator",
+			"Dr. Rusheekanta Mohanta - Event Sponsor",
 			"Mr. Byomakesh Meher - Event Coordinator",
-			"Mr. Hemanta Kumar- Event Coordinator",
+			"Mrs. Madhusmita Bisi - Host",
+			"Dr. Hemanta Kumar Dash - Host",
 			"Mr. Sampad Sahoo - Event Coordinator",
 			"Mr. Soubhagya Nayak - Event Coordinator",
-			"Mrs. Madhusmit Bisi - Host",
 			"Mr. Nishut Suman - Technical Support",
 		],
-		contactInfo: "+91 93812 97056 (For queries)",
+		contactInfo: "+91 84580 67922 / +91 70084 48469 (For queries)",
 		prizes: "TBD (Will be announced soon)",
 	},
 	{
