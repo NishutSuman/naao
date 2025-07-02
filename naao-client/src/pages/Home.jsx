@@ -330,11 +330,11 @@ const EventPopup = ({ onClose }) => {
 							</div>
 						</div>
 
-						{/* <form
+						<form
 							className="space-y-4 mb-4"
-							// onSubmit={() =>
-							// 	window.open("https://digikite.net/naao-meet/", "_blank")
-							// }
+							onSubmit={() =>
+								window.open("https://digikite.net/naao-meet/?p=9", "_blank")
+							}
 						>
 							<button
 								type="submit"
@@ -342,10 +342,10 @@ const EventPopup = ({ onClose }) => {
 							>
 								Register Now
 							</button>
-						</form> */}
-						<div className=" mb-4 w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+						</form>
+						{/* <div className=" mb-4 w-full py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
 							<Link to="/events/bram-naao-2025">Register Now</Link>
-						</div>
+						</div> */}
 
 						<div className="text-xs text-gray-500">
 							Limited seats available. Registration closes on August 1st, 2025.
