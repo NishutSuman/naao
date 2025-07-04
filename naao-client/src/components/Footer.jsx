@@ -86,7 +86,7 @@ const Footer = () => {
 							<div className="flex-col place-items-center space-x-3">
 								<FaPhone className="text-blue-400 mb-2" />
 								<span>
-									+91 98765 43210 <br /> +91 80951 12234
+									+91 93812 97056 <br /> +91 80951 12234
 								</span>
 							</div>
 							<div className="flex-col place-items-center space-x-3">
