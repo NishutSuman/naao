@@ -567,7 +567,7 @@ const events = [
 			"Mr. Ananta Das - Registration",
 			"Mr. Sitaram Beria - Fund Management",
 			"Mr. Rudra Narayan Satapathy - Fund Management",
-			"Mr. Manoj Patnayak - Cultural Management",
+			"Mr. Manoj Pattanayak - Cultural Management",
 			"Mrs. Sarita Rath - Cultural Management",
 			"Mrs. Lipika Das - Cultural Management",
 		],
@@ -608,6 +608,38 @@ const events = [
 		],
 		contactInfo: "+91 84580 67922 / +91 70084 48469 (For queries)",
 		prizes: "TBD (Will be announced soon)",
+	},
+	{
+		id: "naao-cultural-extravaganza-2025",
+		title: "NAAO CULTURAL EXTRAVAGANZA 2025",
+		date: "July 20, 2025 (Audition Date)",
+		time: "TBD",
+		location: "Rail Auditorium, Bhubaneswar",
+		image: "https://i.postimg.cc/43KMBtVg/naao-cultural.png",
+		category: "annual-meet",
+		status: "upcoming",
+		registrationLink: "https://forms.gle/SYcNHeiGDo8b44Lf6",
+		registrationType: "external", // Uses external registration link
+		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link
+		description:
+			"Join us for the NAAO Cultural Extravaganza 2025, a vibrant showcase of talent and creativity from our alumni. This event will feature performances in music, dance, drama, and more, celebrating the rich cultural heritage of Navodaya Vidyalayas.",
+		schedule: [
+			"Registration Open Till: July 19, 2025",
+			"Audition: July 20, 2025",
+			"Final Rehearsal: August 02, 2025",
+			"Stage Show: August 03, 2025",
+		],
+		organizers: [
+			"Mr. Manoj Pattanayak - OB In Charge",
+			"Mrs. Sarita Rath - Cultural Management",
+			"Mrs. Lipika Das - Cultural Management",
+			"Mrs. Itishree Das - Cultural Management",
+			"Mr. Suresh Nayak  - Cultural Management",
+			"Mr. Santanu Sia - Cultural Management",
+			"Mr. Susant Sahu - Cultural Management",
+		],
+		contactInfo: "+91 82490 59176 (Lipika Das) / +91 93370 10001 (Sarita Rath) (For queries)",
+		btnDetails: "It will take you to an external Google Form, please fill all the required details and submit the form to complete your registration.",
 	},
 	{
 		title: "7th NAAO Annual Meet",

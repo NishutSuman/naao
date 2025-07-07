@@ -157,8 +157,7 @@ const EventDetail = () => {
 					setFormStatus({
 						submitted: true,
 						error: false,
-						message:
-							`Thank you for your registration! Your details have been recorded for ${event.title}.`,
+						message: `Thank you for your registration! Your details have been recorded for ${event.title}.`,
 					});
 
 					// Reset form
@@ -586,11 +585,22 @@ const EventDetail = () => {
 							// External registration link
 							<div className="bg-blue-50 p-6 rounded-lg text-center">
 								<p className="text-gray-900 mb-6">
-									To register for this event, please click the button below
+									{/* To register for this event, please click the button below
 									which will take you to our registration portal.
 									<br /> Our registration portal is managed by{" "}
 									<span style={{ fontWeight: "bold" }}>DIGIKITE</span>, a
-									trusted venture by an alumni of JNV Puri, Odisha.
+									trusted venture by an alumni of JNV Puri, Odisha. */}
+									{event.btnDetails ? (
+										<span>{event.btnDetails}</span>
+									) : (
+										<>
+											To register for this event, please click the button below
+											which will take you to our registration portal.
+											<br /> Our registration portal is managed by{" "}
+											<span style={{ fontWeight: "bold" }}>DIGIKITE</span>, a
+											trusted venture by an alumni of JNV Puri, Odisha.
+										</>
+									)}
 								</p>
 								<a
 									href={event.registrationLink}
