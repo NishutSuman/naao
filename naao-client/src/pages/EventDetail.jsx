@@ -316,7 +316,16 @@ const EventDetail = () => {
 								<FaTrophy className="mr-2 text-yellow-500" /> Prizes
 							</h2>
 							<p className="text-gray-700 bg-yellow-50 p-4 rounded-lg border-l-4 border-yellow-500">
-								{event.prizes}
+								<ul className="space-y-2 text-gray-700">
+								{event.prizes.map((item, index) => (
+									<li
+										key={index}
+										className=""
+									>
+										{item}
+									</li>
+								))}
+							</ul>
 							</p>
 						</div>
 					)}
@@ -352,7 +361,26 @@ const EventDetail = () => {
 						<h2 className="text-2xl font-bold mb-6">Registration</h2>
 
 						{/* Dynamic Registration Options */}
-						{event.registrationType === "form" ? (
+						{event.registrationOpen === false ? (
+							<div className="bg-gray-50 p-6 rounded-lg text-center">
+								<div className="w-16 h-16 bg-gray-100 text-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+									<FaExternalLinkAlt size={32} />
+								</div>
+								<h3 className="text-xl font-bold text-gray-800 mb-2">
+									Registration Closed
+								</h3>
+								<p className="text-gray-600 mb-6">
+									Registration for this event has been closed. Please check back
+									for future events.
+								</p>
+								<button
+									className="inline-flex items-center justify-center bg-gray-500 text-white font-bold py-3 px-6 rounded-lg cursor-not-allowed transition-colors duration-300"
+									disabled
+								>
+									Registration Closed
+								</button>
+							</div>
+						) : event.registrationType === "form" ? (
 							<div className="bg-blue-50 p-6 rounded-lg">
 								{formStatus.submitted ? (
 									<div className="text-center py-8">

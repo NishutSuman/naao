@@ -112,7 +112,14 @@ const Events = () => {
 												<FaInfoCircle className="mr-2" /> View Details
 											</Link>
 											{/* Dynamic registration button based on registration type */}
-											{event.registrationType === "form" ? (
+											{event.registrationOpen === false ? (
+												<button
+													className="w-full py-3 bg-gray-500 text-white rounded-md cursor-not-allowed transition duration-300 font-medium"
+													disabled
+												>
+													Registration Closed
+												</button>
+											) : event.registrationType === "form" ? (
 												<Link
 													to={`/events/${event.id}`}
 													className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300 font-medium text-center"
@@ -542,6 +549,7 @@ const events = [
 		status: "upcoming",
 		registrationLink: "https://digikite.net/naao-meet/?p=9",
 		registrationType: "external", // Uses external registration link
+		registrationOpen: true,
 		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link
 		description:
 			"Join us for the biggest alumni gathering of the year, combining the NVS Bhopal Region Alumni Meet with our annual NAAO meetup. Connect with former classmates, network with professionals across various fields, and celebrate our shared Navodayan heritage.",
@@ -584,6 +592,7 @@ const events = [
 		status: "upcoming",
 		registrationType: "form", // Uses internal registration form
 		registrationLink: "", // Not used with form registration
+		registrationOpen: false,
 		whatsappGroup: "https://chat.whatsapp.com/BY2PlzYTbbEHGUWVsYKd3J?mode=r_c", // Add WhatsApp group link
 		description:
 			"NAAO Super Quiz brought to you by HEARTMATE INSTITUTE. Test your knowledge and compete with fellow Navodayans in our 4th annual quiz competition covering various subjects. Open to all alumni of JNV.",
@@ -607,7 +616,11 @@ const events = [
 			"Mr. Nishut Suman - Technical Support",
 		],
 		contactInfo: "+91 84580 67922 / +91 70084 48469 (For queries)",
-		prizes: "TBD (Will be announced soon)",
+		prizes: [
+			"Winner Team : ₹ 10000 + Medal + Certificate",
+			"Runner Up Team : ₹ 5000 + Medal + Certificate",
+			"** Goodies for all the finalists and audience who will correctly answer the questions during the quiz.",
+		],
 	},
 	{
 		id: "naao-cultural-extravaganza-2025",
@@ -620,6 +633,7 @@ const events = [
 		status: "upcoming",
 		registrationLink: "https://forms.gle/SYcNHeiGDo8b44Lf6",
 		registrationType: "external", // Uses external registration link
+		registrationOpen: true,
 		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link
 		description:
 			"Join us for the NAAO Cultural Extravaganza 2025, a vibrant showcase of talent and creativity from our alumni. This event will feature performances in music, dance, drama, and more, celebrating the rich cultural heritage of Navodaya Vidyalayas.",
@@ -638,8 +652,10 @@ const events = [
 			"Mr. Santanu Sia - Cultural Management",
 			"Mr. Susant Sahu - Cultural Management",
 		],
-		contactInfo: "+91 82490 59176 (Lipika Das) / +91 93370 10001 (Sarita Rath) (For queries)",
-		btnDetails: "It will take you to an external Google Form, please fill all the required details and submit the form to complete your registration.",
+		contactInfo:
+			"+91 82490 59176 (Lipika Das) / +91 93370 10001 (Sarita Rath) (For queries)",
+		btnDetails:
+			"It will take you to an external Google Form, please fill all the required details and submit the form to complete your registration.",
 	},
 	{
 		title: "7th NAAO Annual Meet",
