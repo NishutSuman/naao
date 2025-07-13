@@ -9,10 +9,16 @@ import {
 	FaChevronRight,
 	FaStar,
 	FaInfoCircle,
+	FaDownload,
 } from "react-icons/fa";
+import Certificate from "../components/Certificate";
 
 const Events = () => {
 	const [filter, setFilter] = useState("all");
+	const [certificateModal, setCertificateModal] = useState({
+		isOpen: false,
+		eventTitle: "",
+	});
 	const sliderRef = useRef(null);
 
 	// Separate upcoming and past events
@@ -36,6 +42,20 @@ const Events = () => {
 		if (sliderRef.current) {
 			sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
 		}
+	};
+
+	const handleCertificateDownload = (eventTitle) => {
+		setCertificateModal({
+			isOpen: true,
+			eventTitle,
+		});
+	};
+
+	const closeCertificateModal = () => {
+		setCertificateModal({
+			isOpen: false,
+			eventTitle: "",
+		});
 	};
 
 	return (
@@ -111,6 +131,20 @@ const Events = () => {
 											>
 												<FaInfoCircle className="mr-2" /> View Details
 											</Link>
+
+											{/* Add certificate download button for quiz events */}
+											{event.category === "workshop" &&
+												event.title.toLowerCase().includes("quiz") && (
+													<button
+														onClick={() =>
+															handleCertificateDownload(event.title)
+														}
+														className="w-full py-2 bg-green-100 text-green-800 rounded-md hover:bg-green-200 transition duration-300 font-medium flex items-center justify-center"
+													>
+														<FaDownload className="mr-2" /> Download Certificate
+													</button>
+												)}
+
 											{/* Dynamic registration button based on registration type */}
 											{event.registrationOpen === false ? (
 												<button
@@ -376,6 +410,13 @@ const Events = () => {
 					</div>
 				</div>
 			</section>
+
+			{/* Certificate Modal */}
+			<Certificate
+				isOpen={certificateModal.isOpen}
+				onClose={closeCertificateModal}
+				eventTitle={certificateModal.eventTitle}
+			/>
 		</div>
 	);
 };
@@ -584,9 +625,9 @@ const events = [
 	{
 		id: "naao-super-quiz-2025",
 		title: "NAAO Super Quiz",
-		date: "13th July 2025 (Preliminary Round)",
+		date: "20th July 2025 (Mains Round)",
 		time: "08:00 PM IST",
-		location: "Online Mode (Preliminary Round)",
+		location: "Online Mode (Mains Round)",
 		image: "https://i.postimg.cc/76dFJTTR/NAAO-SUPER-QUIZ.png",
 		category: "workshop",
 		status: "upcoming",
@@ -597,13 +638,13 @@ const events = [
 		description:
 			"NAAO Super Quiz brought to you by HEARTMATE INSTITUTE. Test your knowledge and compete with fellow Navodayans in our 4th annual quiz competition covering various subjects. Open to all alumni of JNV.",
 		schedule: [
-			"Preliminary Round: Online Quiz - 13th July 2025",
-			"Main Round: Online Quiz - 20th July 2025",
+			"Preliminary Round: Online Quiz - 13th July 2025 (Completed)",
+			"Main Round: Online Quiz - 20th July 2025 (Upcoming)",
 			"Final Round: Offline Quiz - NVS Regional Alumni Meet - 3rd August 2025",
 			"Final Round Venue: Rail Auditorium, Bhubaneswar",
 			"Final Round Time: 08:00 AM - 09:30 AM",
 			"Final Round Reporting Time: 07:00 AM, 3rd August 2025",
-			"NOTE: The final round will be conducted in person (physical mode) at the NVS Regional Alumni Meet. All finalist need to report at the venue on reporting time positivley.",
+			"NOTE: The final round will be conducted in person (physical mode) at the NVS Regional Alumni Meet. All finalist need to report at the venue on reporting time positively.",
 		],
 		organizers: [
 			"Miss Shobharani Bhanja - In Charge OB",
@@ -620,6 +661,7 @@ const events = [
 			"Winner Team : ₹ 10000 + Medal + Certificate",
 			"Runner Up Team : ₹ 5000 + Medal + Certificate",
 			"** Goodies for all the finalists and audience who will correctly answer the questions during the quiz.",
+			"** Participation Certificate for all the participants.",
 		],
 	},
 	{
