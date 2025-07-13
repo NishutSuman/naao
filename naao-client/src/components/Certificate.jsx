@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaTimes, FaDownload } from "react-icons/fa";
 import participantsData from "../data/participants.json";
-// import certificateTemplate from "../assets/certificate-template.png"; // Adjust path as needed
+import certificateTemplate from "../assets/certificate-template.png"; // Adjust path as needed
 
 const Certificate = ({ isOpen, onClose }) => {
 	const [email, setEmail] = useState("");
@@ -31,7 +31,7 @@ const Certificate = ({ isOpen, onClose }) => {
 			};
 
 			// Use public folder path for production
-			img.src = "../../public/certificate-template.png"; // Adjust path as needed
+			img.src = {certificateTemplate}; // Adjust path as needed
 		});
 	};
 
