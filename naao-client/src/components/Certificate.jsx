@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FaTimes, FaDownload } from "react-icons/fa";
 import participantsData from "../data/participants.json";
+// import certificateTemplate from "../assets/certificate-template.png"; // Adjust path as needed
 
 const Certificate = ({ isOpen, onClose }) => {
 	const [email, setEmail] = useState("");
@@ -10,7 +11,7 @@ const Certificate = ({ isOpen, onClose }) => {
 	const [error, setError] = useState("");
 	const [imageLoaded, setImageLoaded] = useState(false);
 	const [certificateImage, setCertificateImage] = useState(null);
-	const canvasRef = useRef(null);
+	// const canvasRef = useRef(null);
 	const previewCanvasRef = useRef(null);
 
 	// Load certificate image
@@ -29,8 +30,8 @@ const Certificate = ({ isOpen, onClose }) => {
 				reject(new Error("Certificate template not found"));
 			};
 
-			// Try multiple paths
-			img.src = "../src/assets/certificate-template.png";
+			// Use public folder path for production
+			img.src = "../../public/certificate-template.png"; // Adjust path as needed
 		});
 	};
 
@@ -316,9 +317,7 @@ const Certificate = ({ isOpen, onClose }) => {
 								>
 									<FaDownload />
 									<span>
-										{isGenerating
-											? "Generating..."
-											: "Download Certificate"}
+										{isGenerating ? "Generating..." : "Download Certificate"}
 									</span>
 								</button>
 							</div>
