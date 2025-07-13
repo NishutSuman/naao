@@ -1,7 +1,6 @@
 import React, { useState, useRef } from "react";
 import { FaTimes, FaDownload } from "react-icons/fa";
 import participantsData from "../data/participants.json";
-import certificateTemplate from "../../public/assets/certificate-template.png"; // Adjust path as needed
 
 const Certificate = ({ isOpen, onClose }) => {
 	const [email, setEmail] = useState("");
@@ -26,13 +25,12 @@ const Certificate = ({ isOpen, onClose }) => {
 			};
 
 			img.onerror = () => {
-				console.error("Failed to load certificate template");
+				console.error("Failed to load certificate template from:", img.src);
 				reject(new Error("Certificate template not found"));
 			};
 
-			// Use public folder path for production
-			// img.src = {certificateTemplate}; // Adjust path as needed
-			img.src = "../../public/assets/certificate-template.png"; // Adjust path as needed
+			// Use absolute path from public folder
+			img.src = "/assets/certificate-template.png";
 		});
 	};
 
@@ -132,14 +130,14 @@ const Certificate = ({ isOpen, onClose }) => {
 
 			// Draw placeholder content
 			ctx.fillStyle = "#6c757d";
-			ctx.font = "24px Lucidia Handwriting";
+			ctx.font = "24px Arial";
 			ctx.textAlign = "center";
 			ctx.fillText("NAAO CERTIFICATE", 400, 150);
 
 			ctx.font = "16px Arial";
 			ctx.fillText("Certificate Template Not Found", 400, 200);
 			ctx.fillText(
-				"Please check if the image is placed in /src/assets/",
+				"Please check if the image is placed in /public/assets/",
 				400,
 				220
 			);
