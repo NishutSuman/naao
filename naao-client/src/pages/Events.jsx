@@ -12,6 +12,7 @@ import {
 	FaDownload,
 } from "react-icons/fa";
 import Certificate from "../components/Certificate";
+import LazyImage from "../components/LazyImage";
 
 const Events = () => {
 	const [filter, setFilter] = useState("all");
@@ -91,10 +92,10 @@ const Events = () => {
 									className="bg-white rounded-xl overflow-hidden shadow-lg border-2 border-blue-500 flex flex-col md:flex-row h-full"
 								>
 									<div className="md:w-2/5">
-										<img
+										<LazyImage
 											src={event.image}
 											alt={event.title}
-											className="w-full h-64 md:h-full object-cover"
+											className="w-full h-64 md:h-full"
 										/>
 									</div>
 									<div className="p-6 md:w-3/5 flex flex-col">
@@ -304,10 +305,10 @@ const Events = () => {
 								key={index}
 								className="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition duration-300"
 							>
-								<img
+								<LazyImage
 									src={image.src}
 									alt={image.alt}
-									className="w-full h-48 object-cover transform hover:scale-110 transition duration-500"
+									className="w-full h-48 transform hover:scale-110 transition duration-500"
 								/>
 							</div>
 						))}
@@ -425,7 +426,7 @@ const PastEventCard = ({ title, date, time, location, image, category }) => {
 	return (
 		<div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition duration-300 flex flex-col h-full">
 			<div className="relative">
-				<img src={image} alt={title} className="w-full h-48 object-cover" />
+				<LazyImage src={image} alt={title} className="w-full h-48" />
 				<div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30"></div>
 				<span
 					className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold ${getCategoryColor(
@@ -504,7 +505,7 @@ const EventCard = ({ title, date, time, location, image, category }) => {
 	return (
 		<div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 flex flex-col h-full">
 			<div className="relative">
-				<img src={image} alt={title} className="w-full h-48 object-cover" />
+				<LazyImage src={image} alt={title} className="w-full h-48" />
 				<span
 					className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold ${categoryColor}`}
 				>
@@ -588,7 +589,8 @@ const events = [
 		image: "https://i.postimg.cc/q7CdZMSx/nvs-meet-banner-final.jpg",
 		category: "annual-meet",
 		status: "upcoming",
-		registrationLink: "https://digikite.net/naao-meet/checkout/?purpose=9&r=1&ref=0",
+		registrationLink:
+			"https://digikite.net/naao-meet/checkout/?purpose=9&r=1&ref=0",
 		registrationType: "external", // Uses external registration link
 		registrationOpen: true,
 		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link

@@ -333,7 +333,7 @@ const EventPopup = ({ onClose }) => {
 						<form
 							className="space-y-4 mb-4"
 							onSubmit={() =>
-								window.open("https://digikite.net/naao-meet/?p=9", "_blank")
+								window.open("https://digikite.net/naao-meet/checkout/?purpose=9&r=1&ref=0", "_blank")
 							}
 						>
 							<button
