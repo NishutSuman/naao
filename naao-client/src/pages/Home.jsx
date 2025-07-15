@@ -39,7 +39,7 @@ const Home = () => {
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
 						<StatCard
 							icon={<FaGraduationCap />}
-							count="15000+"
+							count="40000+"
 							label="Alumni"
 							color="from-blue-500 to-blue-700"
 						/>

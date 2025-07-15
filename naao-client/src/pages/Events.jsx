@@ -588,7 +588,7 @@ const events = [
 		image: "https://i.postimg.cc/q7CdZMSx/nvs-meet-banner-final.jpg",
 		category: "annual-meet",
 		status: "upcoming",
-		registrationLink: "https://digikite.net/naao-meet/?p=9",
+		registrationLink: "https://digikite.net/naao-meet/checkout/?purpose=9&r=1&ref=0",
 		registrationType: "external", // Uses external registration link
 		registrationOpen: true,
 		// whatsappGroup: "https://chat.whatsapp.com/EventGroup1", // Add WhatsApp group link
