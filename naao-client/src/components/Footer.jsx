@@ -58,14 +58,14 @@ const Footer = () => {
 					<div>
 						<h3 className="text-xl font-bold mb-4">Important Links</h3>
 						<ul className="space-y-2">
-							<FooterLink to="http://navodaya.gov.in/">
+							<FooterLink to="http://navodaya.gov.in/" target="_blank">
 								Navodaya Vidyalaya Samiti
 							</FooterLink>
-							<FooterLink to="https://cnrobhopal.nvs.ac.in/">
+							<FooterLink to="https://cnrobhopal.nvs.ac.in/" target="_blank">
 								NVS RO Bhopal
 							</FooterLink>
 							<FooterLink to="/contact">Contact Us</FooterLink>
-							<FooterLink to="https://digikite.net/naao-meet/" target="_blank">
+							<FooterLink to="https://digikite.net/naao-meet/checkout/?purpose=9&r=1&ref=0" target="_blank">
 								Donate Now
 							</FooterLink>
 						</ul>
